@@ -1,9 +1,9 @@
-<h1> Sample App</h1>
+<h1>微博</h1>
 
-<p>Hi <%= @user.name %>,</p>
+<p>你好，<%= @user.name %>,</p>
 
 <p>
-Welcome to the Sample App! Click on the link below to activate your account:
+  欢迎使用微博！点击下方链接激活账户：
 </p>
 
-<%= link_to "Activate", edit_account_activation_url(@user.activation_token, email: @user.email) %>
+<%= link_to "激活", edit_account_activation_url(@user.activation_token, email: @user.email) %>

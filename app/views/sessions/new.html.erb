@@ -1,5 +1,5 @@
-<% provide(:title, "Log in") %>
-<h1>Log in</h1>
+<% provide(:title, "登录") %>
+<h1>登录</h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
@@ -9,17 +9,17 @@
       <%= f.email_field :email, class: 'form-control' %>
 
       <%= f.label :password %>
-      <%= link_to "(forgot password)", new_password_reset_path %>
+      <%= link_to "(忘记密码)", new_password_reset_path %>
       <%= f.password_field :password, class: 'form-control' %>
 
       <%= f.label :remember_me, class: 'checkbox inline' do %>
         <%= f.check_box :remember_me %>
-        <span>Remember me on this computer</span>
+        <span>记住我</span>
       <% end %>
 
-      <%= f.submit "Log in", class: "btn btn-primary" %>
+      <%= f.submit "登录", class: "btn btn-primary" %>
     <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %>
+    <p>新用户？<%= link_to "现在注册", signup_path %>
   </div>
 </div>
